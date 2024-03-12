@@ -1,13 +1,58 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
+  
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.logo{
+  display:inline-block;
+  color: black;
+  background-color: white;
+  font-family:"pacifico", cursive ;
+}
+
+span{
+  font-family:"pacifico", cursive ;
+  color: orange;
+  
+  
+}
+/* shop new women men box */
+.nav{
+  display: flex;
+  justify-content:space-between;
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-family: Oswald,sans-serif;
+  text-decoration: none; 
+}
+
+/* shop new women men */
+.nav a{
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.links{
+  
+}
+#all{
+  font-size: 25px;
+}
+.card{
+  border: 1px brown solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+.container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  grid-gap: 20px;
+  justify-content: center;
 }
