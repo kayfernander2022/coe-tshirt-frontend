@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function Section({title,text}) {
   return (
     <Wrap>
       <Text>
-        <h1>{title}</h1>
+        <Link to ="/newIn"><h1>{title}</h1></Link>
         <p>{text}</p>
       </Text>
       <Buttons>
@@ -16,6 +17,9 @@ function Section({title,text}) {
     </Wrap>
   )
 }
+
+//<Link to ="/shop"><div>SHOP</div>
+//</Link>
 
 export default Section
 

@@ -6,6 +6,7 @@ import NewIn from'./Pages/NewIn'
 import Men from'./Pages/Men'
 import Women from'./Pages/Women'
 import tshirtLoader from "./loaders/tshirtLoader"
+import newInLoader from "./loaders/newInLoader"
 
 
 const router = createBrowserRouter(
@@ -16,7 +17,7 @@ const router = createBrowserRouter(
     <Route path ="/shop"element={<Shop/>} loader={tshirtLoader}/>
     {/* in browser url can be localhost:3000/tshirt/cat and we will get the main component? */}
     <Route path ="/:anything"element={<Landing/>}/>
-    <Route path ="/newIn"element={<NewIn/>}/>
+    <Route path ="/newIn"element={<NewIn/>} loader={newInLoader}/>
     <Route path ="/men"element={<Men/>}/>
     <Route path ="/women"element={<Women/>}/>
 

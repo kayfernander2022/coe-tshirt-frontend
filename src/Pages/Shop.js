@@ -12,6 +12,7 @@ return tshirt.map(tshirt =>(
   <h3>{tshirt.description}</h3>
   <h2>${tshirt.price}</h2>
   <h2>{tshirt.image}</h2>
+  <h2>{tshirt.category}</h2>
     </div>
     </div>
 ))
