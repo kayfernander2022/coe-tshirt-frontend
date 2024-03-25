@@ -1,6 +1,6 @@
 import {createBrowserRouter,createRoutesFromElements,Route} from "react-router-dom"
 import App from './App'
-import Main from "./Pages/Main"
+import Landing from "./Pages/Landing"
 import Shop from'./Pages/Shop'
 import NewIn from'./Pages/NewIn'
 import Men from'./Pages/Men'
@@ -12,10 +12,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
   <Route path ="/"element={<App/>}>
 
-    <Route path =""element={<Main/>}/>
+    <Route path =""element={<Landing/>}/>
     <Route path ="/shop"element={<Shop/>} loader={tshirtLoader}/>
     {/* in browser url can be localhost:3000/tshirt/cat and we will get the main component? */}
-    <Route path ="/:anything"element={<Main/>}/>
+    <Route path ="/:anything"element={<Landing/>}/>
     <Route path ="/newIn"element={<NewIn/>}/>
     <Route path ="/men"element={<Men/>}/>
     <Route path ="/women"element={<Women/>}/>
