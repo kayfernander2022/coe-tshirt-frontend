@@ -5,7 +5,7 @@ const URL = 'https://coe-tshirt-backend.onrender.com'
 export const newInLoader = async () => {
   try
   {
-  const response = await fetch(URL + "/tshirt")
+  const response = await fetch(URL + "/tshirt/search?isNew=true")
   const newIn = await response.json() 
   return newIn
   }
